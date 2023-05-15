@@ -6,6 +6,7 @@ from tqdm import tqdm
 import json 
 import numpy as np
 import pandas as pd
+
 app = Flask(__name__) 
 
 ###function###
@@ -168,10 +169,6 @@ def analyse():
         'duration_minutes': 'mean'
     })
     return result.to_json()
-
-
-
-
 
 ###app settings###
 if __name__ == '__main__':
